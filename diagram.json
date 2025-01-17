@@ -40,7 +40,13 @@
       "left": -157.6,
       "attrs": {}
     },
-    { "type": "wokwi-rgb-led", "id": "rgb1", "top": 71.2, "left": -133.3, "attrs": {} },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "rgb1",
+      "top": 71.2,
+      "left": -133.3,
+      "attrs": { "common": "cathode" }
+    },
     {
       "type": "wokwi-led",
       "id": "led1",
