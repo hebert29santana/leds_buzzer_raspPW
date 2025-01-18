@@ -35,7 +35,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(leds-buzzer-tarefa1 leds-buzzer-tarefa1.c )
+add_executable(leds-buzzer-tarefa1 leds-buzzer-tarefa1.c controle_buzzer.c )
 
 pico_set_program_name(leds-buzzer-tarefa1 "leds-buzzer-tarefa1")
 pico_set_program_version(leds-buzzer-tarefa1 "0.1")
