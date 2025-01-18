@@ -14,22 +14,13 @@
 #include "controle_buzzer.h"
 #include "controle_leds.h"
 #include "ler_tecla.h"
+#include "teclado_init.h"
 
 // Definições dos pinos dos LEDs e do buzzer
 #define LED_VERDE_PIN 11
 #define LED_AZUL_PIN 12
 #define LED_VERMELHO_PIN 13
 #define BUZZER_PIN 21
-
-// Pinos do teclado matricial
-#define ROW1 2
-#define ROW2 3
-#define ROW3 4
-#define ROW4 5
-#define COL1 6
-#define COL2 7
-#define COL3 8
-#define COL4 9
 
 // Definições das teclas
 #define TECLA_A 'A'
@@ -38,18 +29,6 @@
 #define TECLA_D 'D'
 #define TECLA_HASH '#'
 #define TECLA_ESTRELA '*'
-
-// Função de inicialização do teclado matricial
-void teclado_init() {
-    gpio_init(ROW1); gpio_set_dir(ROW1, GPIO_IN);
-    gpio_init(ROW2); gpio_set_dir(ROW2, GPIO_IN);
-    gpio_init(ROW3); gpio_set_dir(ROW3, GPIO_IN);
-    gpio_init(ROW4); gpio_set_dir(ROW4, GPIO_IN);
-    gpio_init(COL1); gpio_set_dir(COL1, GPIO_OUT);
-    gpio_init(COL2); gpio_set_dir(COL2, GPIO_OUT);
-    gpio_init(COL3); gpio_set_dir(COL3, GPIO_OUT);
-    gpio_init(COL4); gpio_set_dir(COL4, GPIO_OUT);
-}
 
 int main() {
     // Configura os pinos dos LEDs e do buzzer como saída
