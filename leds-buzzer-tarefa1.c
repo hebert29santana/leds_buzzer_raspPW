@@ -4,11 +4,13 @@
     Subgrupo 6
     Hebert Costa Vaz Santana - TIC370101235
     Welton Almeida de Matos - TIC370100649
+    Maria Valentina da Luz Mattos Baracat Habib - TIC370101020
 */
 
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 #include "controle_buzzer.h"
+#include "controle_leds.h"
 
 // Definições dos pinos dos LEDs e do buzzer
 #define LED_VERDE_PIN 11
@@ -81,24 +83,6 @@ char ler_tecla() {
     return 0;
 }
 
-// Função para controlar os LEDs
-void controle_leds(char tecla) {
-    gpio_put(LED_VERDE_PIN, 0);
-    gpio_put(LED_AZUL_PIN, 0);
-    gpio_put(LED_VERMELHO_PIN, 0);
-
-    if (tecla == TECLA_A) {
-        gpio_put(LED_VERDE_PIN, 1);  // Liga o LED verde
-    } else if (tecla == TECLA_B) {
-        gpio_put(LED_AZUL_PIN, 1);   // Liga o LED azul
-    } else if (tecla == TECLA_C) {
-        gpio_put(LED_VERMELHO_PIN, 1);  // Liga o LED vermelho
-    } else if (tecla == TECLA_D) {
-        gpio_put(LED_VERDE_PIN, 1);  // Liga todos os LEDs
-        gpio_put(LED_AZUL_PIN, 1);
-        gpio_put(LED_VERMELHO_PIN, 1);
-    }
-}
 
 int main() {
     // Configura os pinos dos LEDs e do buzzer como saída
