@@ -2,12 +2,13 @@
     Tarefa 1 Unidade 4 - Aula Síncrona 14/01
     Grupo 7
     Subgrupo 6
-    Hebert Costa Vaz Santana
-    TIC370101235
+    Hebert Costa Vaz Santana - TIC370101235
+    Welton Almeida de Matos - TIC370100649
 */
 
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
+#include "controle_buzzer.h"
 
 // Definições dos pinos dos LEDs e do buzzer
 #define LED_VERDE_PIN 11
@@ -96,21 +97,6 @@ void controle_leds(char tecla) {
         gpio_put(LED_VERDE_PIN, 1);  // Liga todos os LEDs
         gpio_put(LED_AZUL_PIN, 1);
         gpio_put(LED_VERMELHO_PIN, 1);
-    }
-}
-
-// Função para controlar o buzzer
-void controle_buzzer(char tecla) {
-    if (tecla == TECLA_HASH) {
-        gpio_put(BUZZER_PIN, 1);  // Liga o buzzer
-        sleep_ms(1000);             // Buzzer ligado por 1s
-        gpio_put(BUZZER_PIN, 0);  // Desliga o buzzer
-    } else if (tecla == TECLA_ESTRELA) {
-        // Desliga tudo (LEDs e buzzer)
-        gpio_put(LED_VERDE_PIN, 0);
-        gpio_put(LED_AZUL_PIN, 0);
-        gpio_put(LED_VERMELHO_PIN, 0);
-        gpio_put(BUZZER_PIN, 0);
     }
 }
 
