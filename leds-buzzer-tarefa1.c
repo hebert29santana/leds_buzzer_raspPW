@@ -5,12 +5,14 @@
     Hebert Costa Vaz Santana - TIC370101235
     Welton Almeida de Matos - TIC370100649
     Maria Valentina da Luz Mattos Baracat Habib - TIC370101020
+    Gustavo Ferreira Santos - TIC370101484
 */
 
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 #include "controle_buzzer.h"
 #include "controle_leds.h"
+#include "ler_tecla.h"
 
 // Definições dos pinos dos LEDs e do buzzer
 #define LED_VERDE_PIN 11
@@ -47,42 +49,6 @@ void teclado_init() {
     gpio_init(COL3); gpio_set_dir(COL3, GPIO_OUT);
     gpio_init(COL4); gpio_set_dir(COL4, GPIO_OUT);
 }
-
-// Função para ler o teclado matricial correspondente com o que pede a tarefa
-char ler_tecla() {
-    const char matriz[4][4] = {
-        {'1', '2', '3', TECLA_A},
-        {'4', '5', '6', TECLA_B},
-        {'7', '8', '9', TECLA_C},
-        {TECLA_ESTRELA, '0', TECLA_HASH, TECLA_D}
-    };
-
-    for (int c = 0; c < 4; c++) {
-        gpio_put(COL1, c == 0);
-        gpio_put(COL2, c == 1);
-        gpio_put(COL3, c == 2);
-        gpio_put(COL4, c == 3);
-
-        if (gpio_get(ROW1)) {
-            sleep_ms(200);  
-            return matriz[0][c];
-        }
-        if (gpio_get(ROW2)) {
-            sleep_ms(200);  
-            return matriz[1][c];
-        }
-        if (gpio_get(ROW3)) {
-            sleep_ms(200);  
-            return matriz[2][c];
-        }
-        if (gpio_get(ROW4)) {
-            sleep_ms(200);  
-            return matriz[3][c];
-        }
-    }
-    return 0;
-}
-
 
 int main() {
     // Configura os pinos dos LEDs e do buzzer como saída
