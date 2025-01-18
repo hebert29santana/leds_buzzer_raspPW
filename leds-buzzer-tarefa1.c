@@ -8,6 +8,7 @@
     Gustavo Ferreira Santos - TIC370101484
 */
 
+#include "stdio.h"
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 #include "controle_buzzer.h"
@@ -70,7 +71,16 @@ int main() {
     while (true) {
         char tecla = ler_tecla();  // Lê a tecla pressionada
 
-        if (tecla) {  // Se uma tecla foi pressionada
+        if (tecla) {
+            if (tecla == TECLA_ESTRELA) {
+                gpio_put(LED_VERDE_PIN, 0);  
+                gpio_put(LED_AZUL_PIN, 0);
+                gpio_put(LED_VERMELHO_PIN, 0);
+                gpio_put(BUZZER_PIN, 0);  
+                printf("Programa finalizado\n");
+                break;  
+            }
+
             controle_leds(tecla);  // Controla os LEDs
             controle_buzzer(tecla);  // Controla o buzzer
         }
