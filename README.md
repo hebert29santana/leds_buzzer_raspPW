@@ -41,5 +41,8 @@ Hebert Santana - Matrícula TIC370101235
 ### Projeto no Wokwi
 Você pode visualizar e testar o projeto no simulador online Wokwi através deste [link para o projeto no Wokwi](https://wokwi.com/projects/420341431003291649).
 
+### Uploud do Video
+Voce pode verificar o video explicativo do projeto em execução através do [link para o video do projeto]().
+
 ### Licença
 Este projeto é de código aberto e pode ser utilizado sob a licença MIT.
