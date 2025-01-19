@@ -8,6 +8,7 @@ Welton Almeida de Matos - TIC370100649
 Maria Valentina da Luz Mattos Baracat Habib - TIC370101020
 Gustavo Ferreira Santos - TIC370101484
 Igor Emanuel Soares Leal - TIC370101965
+Paulo César Almeida Menezes - TIC370101122
 
 ### Funcionalidades
 - **Controle de LEDs**: Quando teclas específicas (A, B, C ou D) são pressionadas, diferentes LEDs são acesos:

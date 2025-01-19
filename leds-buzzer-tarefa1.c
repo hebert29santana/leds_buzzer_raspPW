@@ -2,11 +2,12 @@
     Tarefa 1 Unidade 4 - Aula Síncrona 14/01
     Grupo 7
     Subgrupo 6
-    Hebert Costa Vaz Santana - TIC370101235
-    Welton Almeida de Matos - TIC370100649
-    Maria Valentina da Luz Mattos Baracat Habib - TIC370101020
-    Gustavo Ferreira Santos - TIC370101484
-    Igor Emanuel Soares Leal - TIC370101965
+    Hebert Costa Vaz Santana - TIC370101235 - Líder do Projeto
+    Welton Almeida de Matos - TIC370100649 - Desenvolvedor
+    Maria Valentina da Luz Mattos Baracat Habib - TIC370101020 - Desenvolvedor
+    Gustavo Ferreira Santos - TIC370101484 - Desenvolvedor
+    Igor Emanuel Soares Leal - TIC370101965 - Desenvolvedor e VideoMaker
+    Paulo César Almeida Menezes - TIC370101122 - Desenvolvedor
 */
 
 #include "stdio.h"
