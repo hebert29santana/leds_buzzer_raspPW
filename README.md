@@ -4,6 +4,10 @@ Este projeto implementa um sistema de controle de LEDs e um buzzer utilizando um
 
 ### Integrantes do Projeto
 Hebert Santana - Matrícula TIC370101235
+Welton Almeida de Matos - TIC370100649
+Maria Valentina da Luz Mattos Baracat Habib - TIC370101020
+Gustavo Ferreira Santos - TIC370101484
+Igor Emanuel Soares Leal - TIC370101965
 
 ### Funcionalidades
 - **Controle de LEDs**: Quando teclas específicas (A, B, C ou D) são pressionadas, diferentes LEDs são acesos:
@@ -42,7 +46,7 @@ Hebert Santana - Matrícula TIC370101235
 Você pode visualizar e testar o projeto no simulador online Wokwi através deste [link para o projeto no Wokwi](https://wokwi.com/projects/420341431003291649).
 
 ### Uploud do Video
-Voce pode verificar o video explicativo do projeto em execução através do [link para o video do projeto]().
+Voce pode verificar o video explicativo do projeto em execução através do [link para o video do projeto](https://drive.google.com/file/d/15eR0ICnFRbfHjuDvSDbI-SP2CGIP0kYp/view?usp=sharing).
 
 ### Licença
 Este projeto é de código aberto e pode ser utilizado sob a licença MIT.

@@ -6,6 +6,7 @@
     Welton Almeida de Matos - TIC370100649
     Maria Valentina da Luz Mattos Baracat Habib - TIC370101020
     Gustavo Ferreira Santos - TIC370101484
+    Igor Emanuel Soares Leal - TIC370101965
 */
 
 #include "stdio.h"
